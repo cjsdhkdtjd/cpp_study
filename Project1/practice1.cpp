@@ -2,14 +2,20 @@
 using namespace std;
 
 int main() {
-	string name;
-	string age;
-	cout << "이름을 입력하세요: ";
-	cin >> name;
-	cout << "안녕하세요, " << name << " 님!" << endl;
-	cout << "나이를 입력하세요: ";
-	cin >> age;
-	cout << "당신의 나이는 " << age << "살이군요!" << endl;
+	int a = 10;
+	double pie = 3.14;
+	char ch = 'A';
+	bool flag = true;
+
+	cout << "정수: " << a << endl;
+	cout << "실수: " << pie << endl;
+	cout << "문자: " << ch << endl;
+	cout << "논리: " << flag << endl;
+
+	//산술 연산
+	int x = 7, y = 3;
+	cout << "x + y = " << x + y << endl;
+	cout << "x % y = " << x % y << endl;
 
 	return 0;
 }
