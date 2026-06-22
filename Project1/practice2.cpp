@@ -7,5 +7,6 @@ int main() {
 	char ch = 'A';
 	bool flag = true;
 
-	cout << "정수: " << a << endl
+	cout << "정수: " << a << endl;
+	cout << "실수: " << pie << endl;
 }
