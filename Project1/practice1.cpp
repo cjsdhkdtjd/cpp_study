@@ -2,20 +2,13 @@
 using namespace std;
 
 int main() {
-	int a = 10;
-	double pie = 3.14;
-	char ch = 'A';
-	bool flag = true;
-
-	cout << "정수: " << a << endl;
-	cout << "실수: " << pie << endl;
-	cout << "문자: " << ch << endl;
-	cout << "논리: " << flag << endl;
-
-	//산술 연산
-	int x = 7, y = 3;
+	int x, y;
+	cout << "첫 번째 정수를 입력하세요: ";
+	cin >> x;
+	cout << "두 번째 정수를 입력하세요: ";
+	cin >> y;
 	cout << "x + y = " << x + y << endl;
-	cout << "x % y = " << x % y << endl;
-
-	return 0;
+	cout << "x - y = " << x - y << endl;
+	cout << "x * y = " << x * y << endl;
+	cout << "x / y = " << x / y << endl;
 }
