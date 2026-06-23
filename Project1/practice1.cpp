@@ -2,13 +2,13 @@
 using namespace std;
 
 int main() {
-	int x, y;
-	cout << "첫 번째 정수를 입력하세요: ";
+	float x, y;
+	cout << "키를 입력하세요: ";
 	cin >> x;
-	cout << "두 번째 정수를 입력하세요: ";
+	cout << "몸무게를 입력하세요: ";
 	cin >> y;
-	cout << "x + y = " << x + y << endl;
-	cout << "x - y = " << x - y << endl;
-	cout << "x * y = " << x * y << endl;
-	cout << "x / y = " << x / y << endl;
+	cout << "키(cm): " << x << endl;
+	cout << "몸무게(kg): " << y << endl;
+	x = x / 100;
+	cout << "BMI: " << y / (x*x) << endl;
 }
