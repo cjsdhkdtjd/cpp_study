@@ -1,21 +1,35 @@
 #include <iostream>
 using namespace std;
 
-class Car {
-public:
-	string brand;
-	int speed;
+class BankAccount{
+private:
+	int balance;
 
-	void drive() {
-		cout << brand << " 자동차가 " << speed << "km/s로 달립니다." << endl;
+public:
+	BankAccount(int initial) {
+		balance = initial;
+	}
+
+	void deposit(int amount) {
+		balance += amount;
+		cout << amount << "원 입금. 잔액: " << balance << endl;
+	}
+	void withdraw(int amount) {
+		if (balance >= amount) {
+			balance -= amount;
+			cout << amount << "원 출금. 잔액: " << balance << endl;
+		}
+		else {
+			cout << "잔액 부족!" << endl;
+		}
 	}
 };
 
 int main() {
-	Car myCar;
-	myCar.brand = "Hyandai";
-	myCar.speed = 100;
-	myCar.drive();
+	BankAccount myAcc(1000);
+	myAcc.deposit(500);
+	myAcc.withdraw(300);
+	myAcc.withdraw(1500);
 
 	return 0;
 }
