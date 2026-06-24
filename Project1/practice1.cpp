@@ -1,13 +1,21 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-	int num;
-	cout << "정수를 입력하시오: ";
-	cin >> num;
+class Car {
+public:
+	string brand;
+	int speed;
 
-	for (int i = 1; i <= 9; i++) {
-		cout << num << " x " << i << " = " << num * i << endl;
+	void drive() {
+		cout << brand << " 자동차가 " << speed << "km/s로 달립니다." << endl;
 	}
+};
+
+int main() {
+	Car myCar;
+	myCar.brand = "Hyandai";
+	myCar.speed = 100;
+	myCar.drive();
+
 	return 0;
 }
