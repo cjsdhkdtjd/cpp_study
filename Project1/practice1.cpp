@@ -1,35 +1,11 @@
 #include <iostream>
 using namespace std;
 
-class BankAccount{
-private:
-	int balance;
-
-public:
-	BankAccount(int initial) {
-		balance = initial;
-	}
-
-	void deposit(int amount) {
-		balance += amount;
-		cout << amount << "¿ø ÀÔ±Ý. ÀÜ¾×: " << balance << endl;
-	}
-	void withdraw(int amount) {
-		if (balance >= amount) {
-			balance -= amount;
-			cout << amount << "¿ø Ãâ±Ý. ÀÜ¾×: " << balance << endl;
-		}
-		else {
-			cout << "ÀÜ¾× ºÎÁ·!" << endl;
-		}
-	}
-};
-
 int main() {
-	BankAccount myAcc(1000);
-	myAcc.deposit(500);
-	myAcc.withdraw(300);
-	myAcc.withdraw(1500);
+	int arr[3] = { 10, 20, 30 };
 
+	for (int i = 0; i < 3; i++) {
+		cout << "arr[" << i << "] = " << arr[i] << endl;
+	}
 	return 0;
 }
