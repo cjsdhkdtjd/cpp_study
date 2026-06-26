@@ -2,13 +2,14 @@
 using namespace std;
 
 int main() {
-	int a = 42;
-	int* p = &a;
+	int a = 100;
+	int& ref = a;
 
-	cout << "a의 값: " << a << endl;
-	cout << "a의 주소: " << &a << endl;
-	cout << "포인터 p의 값(=a의 주소): " << p << endl;
-	cout << "포인터가 가리키는 값: " << *p << endl;
+	cout << "a = " << a << endl;
+	cout << "ref = " << ref << endl;
+
+	ref = 200;
+	cout << "a = " << a << endl;
 
 	return 0;
 }
